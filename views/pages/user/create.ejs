@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Regitrasi</title>
+		<link rel="stylesheet" href="/style.css">
+	</head>
+	<body>
+		<h1>Add User</h1>
+		<%- include('../components/navbar') %>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="card mt-5">
+					<div class="card-header">
+						<b><u><i>DATA USER</i></u></b>
+						<a href="/users/create" class="btn btn-success" style="float: right">
+							<i class="fa fa-plus"></i> Tambah data
+						</a>
+					</div>
+					<div class="card-body">
+						<div class="card-body">
+                			<form action="/users">
+                    			<input type="text" name="nama" class="form-control mb-3" placeholder="Nama" required="">
+                  				<input type="text" name="email" class="form-control mb-3" placeholder="Email" required="">
+                    			<input type="password" name="password" class="form-control mb-3" placeholder="Password" required="">
+                    			<input type="text" name="telepon" class="form-control mb-3" placeholder="Telepon" required="">
+                    			<button class="btn btn-outline-secondary" type="submit">Simpan</button>
+                    		</form>
+                    	</div>
+            		</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<%- include('../components/footer') %>
+		
+		<footer>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;&copy; 2020 khafifah Rahayu</p>
+		</footer>
+	</body>
+</html>

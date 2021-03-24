@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+ <html>
+ <head>
+ 	<title>User</title>
+ 	<link rel="stylesheet" href="style.css">
+ </head>
+ <body>
+ 	<%- include('../components/navbar') %>
+ 	<a href="/users">Kembali</a>
+
+ 	<h1>Detail User</h1>
+ 	<ul>
+ 		<li>Nama: <strong><%=user.name %></strong></li>
+ 		<li>Email: <strong><%=user.email %></strong></li>
+ 		<li>Telepon: <strong><%=user.telepon %></strong></li>
+
+ 	</ul>
+
+  	<footer>
+	<p>&copy; 2021 kelas. khafifah Rahayu</p>
+</footer>
+ </body>
+ </html>

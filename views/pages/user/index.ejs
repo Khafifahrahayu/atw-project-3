@@ -1,0 +1,49 @@
+<%- include('../components/navbar') %>
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<div class="card mt-5">
+				<div class="card-header">
+					<b><u><i>DATA USER</i></u></b>
+					<a href="/users/create" class="btn btn-success" style="float: right">
+						<i class="fa fa-plus"></i> Tambah data
+					</a>
+				</div>
+				<div class="card-body">
+					<table class="table">
+						<thead>
+							<tr>
+								<th><center>Nama</center></th>
+								<th><center>Aksi</center></th>
+							</tr>
+						</thead>
+						<tbody>
+							<% users.forEach(function(user) { %> 
+							<tr>
+								<td><center><%=user.name.toUpperCase() %></center></td>
+								<td>
+									<center>
+									<a href="/users" class="btn btn-warning">
+										<i class="fa fa-eye"></i>
+									</a>
+									<a href="" class="btn btn-primary">
+										<i class="fa fa-edit"></i>
+									</a>
+									<a href="" class="btn btn-danger">
+										<i class="fa fa-trash"></i>
+									</a>
+								</center>
+								</td>
+							</tr>
+							<%}) %>
+						</tbody>
+					</table>
+
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<%- include('../components/footer') %>
